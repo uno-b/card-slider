@@ -112,7 +112,6 @@ body {
   overflow: hidden;
 }
 .slider_card-item.for-hero-talents-slider .slider_card-item_photo:before {
-  border-bottom: 22px solid #fff;
   border-right: 22px solid transparent;
   content: '';
   height: 0;
@@ -120,6 +119,14 @@ body {
   top: 208px;
   width: 0;
   z-index: 1;
+}
+.slider_card-item_photo_logo {
+  width: 45px;
+  height: 45px;
+  z-index: 100;
+  position: absolute;
+  top: 12.2rem;
+  right: 0.2rem;
 }
 .skill_talent-more,
 .skill_talent_item {
@@ -132,22 +139,39 @@ body {
   transform: translateY(calc((100% - 230px) / -2));
   width: 100%;
 }
-.slider_card-item_position {
+.slider_card-item_country {
   color: #455065;
   opacity: 0.6;
   padding-top: 8px;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
-.slider_card-item_company {
+.slider_card-item_country img {
+  width: 25px;
+  height: 15px;
+  border-radius: 2px;
+  transform: translate(25%, 25%);
+}
+.slider_card-item_field {
   color: #262d3d;
 }
-.slider_card-item.for-hero-talents-slider .slider_card-item_company {
+.slider_card-item.for-hero-talents-slider .slider_card-item_field {
   padding: 44px 0 25px;
   position: static;
 }
-.slider_card-item_company_wrapper {
-  height: 35px;
-  margin: 0 0 10px;
-  text-align: left;
+.slider_card-item_in_country {
+  color: #455065;
+  opacity: 0.6;
+  padding-top: 8px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.slider_card-item_in_country img {
+  width: 25px;
+  height: 15px;
+  border-radius: 2px;
+  transform: translate(25%, 25%);
 }
 .slider_card-item {
   background-color: #fff;
@@ -169,12 +193,12 @@ body {
     width: 370px;
   }
   .slider_card-item:last-child {
-    display: none;
+    display: block;
   }
 }
 @media only screen and (max-width: 700px) {
   .slider_card-item {
-    display: none;
+    display: block;
   }
   .slider_card-item:first-child {
     display: block;
@@ -199,14 +223,8 @@ body {
   padding: 24px 32px 0;
 }
 .slider_card-item_photo {
-  -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    24px 100%,
-    0 calc(100% - 24px)
-  );
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 24px 100%, 0 calc(100% - 24px));
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 80% 100%, 100% 80%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 100%, 80% 100%, 100% 80%, 100% 0%);
   position: relative;
 }
 .slider_card-item_photo img {
@@ -216,14 +234,11 @@ body {
 .slider_card-item_photo:after {
   width: 21px;
   height: 28px;
-  /* Logo goes here
-  background-image: url(https://bs-assets.toptal.io/blackfish-assets/public/shared/images/landings/toptal_watermark_fb81e8.svg);
-  */
   background-repeat: no-repeat;
-  background-size: 21px 28px;
+  background-size: 30px 30px;
   bottom: 20px;
   content: '';
-  left: 32px;
+  right: 10px;
   position: absolute;
   z-index: 1;
 }
@@ -233,8 +248,7 @@ body {
   font-weight: 300;
   line-height: 1.4em;
 }
-.slider_card-item_description,
-.slider_card-item_position {
+.slider_card-item_description {
   font-size: 13px;
   font-weight: 300;
 }
@@ -243,7 +257,7 @@ body {
   line-height: 20px;
   padding: 12px 0 180px;
 }
-.slider_card-item_company {
+.slider_card-item_field {
   bottom: 0;
   font-size: 11px;
   left: 0;
@@ -252,17 +266,6 @@ body {
   position: absolute;
   right: 0;
   text-transform: uppercase;
-}
-.slider_card-item_company_wrapper {
-  line-height: 60px;
-  margin-top: 15px;
-}
-.slider_card-item_company_wrapper img {
-  display: inline-block;
-  margin: 0 auto;
-  max-height: 100%;
-  max-width: 100%;
-  vertical-align: middle;
 }
 .slider_card-item_cta {
   background-color: #00cc83;
