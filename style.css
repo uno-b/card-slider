@@ -141,7 +141,6 @@
   padding-top: 8px;
   font-size: 13px;
   font-weight: 300;
-  text-transform: uppercase;
 }
 .slider_card-item_country img {
   width: 25px;
@@ -150,7 +149,7 @@
   transform: translate(25%, 25%);
 }
 .slider_card-item_field {
-  color: #262d3d;
+  color: #151f43;
 }
 .slider_card-item.for-hero-talents-slider .slider_card-item_field {
   padding: 44px 0 25px;
@@ -241,7 +240,7 @@
   z-index: 1;
 }
 .slider_card-item_title {
-  color: #000;
+  color: #151f43;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4em;
@@ -263,7 +262,6 @@
   padding: 0 32px 50px;
   position: absolute;
   right: 0;
-  text-transform: uppercase;
 }
 .slider_card-item:hover .slider_card-item_cta {
   opacity: 1;

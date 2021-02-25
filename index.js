@@ -4,4 +4,4 @@ var myVar = setInterval(() => {
   let changeItem = children[0];
   parent.removeChild(changeItem);
   parent.appendChild(changeItem);
-}, 3000);
+}, 300000);
