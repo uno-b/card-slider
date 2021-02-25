@@ -1,7 +1,3 @@
-body {
-  margin: 0 auto;
-}
-
 .page_hero-talents {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -17,10 +13,10 @@ body {
   width: 415px !important;
   margin: 0 auto;
 }
-@media only screen and (max-width: 1142px) {
+@media only screen and (max-width: 800px) {
   .page_hero-talents {
-    -webkit-transform: scale(0.85);
-    transform: scale(0.85);
+    -webkit-transform: scale(0.85) translateX(15%);
+    transform: scale(0.85) translateX(-15%);
   }
 }
 .page_hero-talents_cta {
@@ -189,7 +185,7 @@ body {
 }
 @media only screen and (max-width: 1240px) {
   .slider_card-item {
-    margin-left: 20px;
+    margin: 0;
     width: 370px;
   }
   .slider_card-item:last-child {
