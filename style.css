@@ -15,8 +15,8 @@
 }
 @media only screen and (max-width: 800px) {
   .page_hero-talents {
-    -webkit-transform: scale(0.85) translateX(15%);
-    transform: scale(0.85) translateX(-15%);
+    -webkit-transform: scale(0.85) translateX(25%);
+    transform: scale(0.85) translateX(-25%);
   }
 }
 .page_hero-talents_cta {
